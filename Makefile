@@ -33,7 +33,7 @@ style:
 	@find -regex '.*/.*\.\(c\|cpp\|h\)$$' | xargs $(CODE_STYLE)
 
 install:
-	$(PYTHON) setup.py install
+	$(PYTHON) -m pip install .
 
 example:$(TARGETS)
 	make -C $@
